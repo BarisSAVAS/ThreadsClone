@@ -26,32 +26,16 @@ struct RegistirationView: View {
             // MARK: Email and Password
             VStack{
                 TextField("Enter your Email", text: $email)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .padding(.horizontal ,24)
-                    .font(.subheadline)
-                    .cornerRadius(10)
+                    .modifier(ThreadsTextFieldModifier())
                 
                 SecureField("Enter your Password" , text: $password)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .padding(.horizontal ,24)
-                    .font(.subheadline)
-                    .cornerRadius(10)
+                    .modifier(ThreadsTextFieldModifier())
                 
                 TextField("Enter your Full name", text: $fullname)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .padding(.horizontal ,24)
-                    .font(.subheadline)
-                    .cornerRadius(10)
+                    .modifier(ThreadsTextFieldModifier())
                 
                 TextField("Enter your Username", text: $username)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .padding(.horizontal ,24)
-                    .font(.subheadline)
-                    .cornerRadius(10)
+                    .modifier(ThreadsTextFieldModifier())
             }
             Button {
                 print("Sign up buttons activated")

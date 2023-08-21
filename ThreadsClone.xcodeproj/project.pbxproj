@@ -13,6 +13,7 @@
 		AE850E4B2A93C76C00A39D01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE850E4A2A93C76C00A39D01 /* Preview Assets.xcassets */; };
 		AE89DE982A93C8FD0078BAA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89DE972A93C8FD0078BAA8 /* LoginView.swift */; };
 		AE89DE9A2A93EFCA0078BAA8 /* RegistirationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */; };
+		AEA27BAB2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AE850E4A2A93C76C00A39D01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE89DE972A93C8FD0078BAA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistirationView.swift; sourceTree = "<group>"; };
+		AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		AE89DE8C2A93C8250078BAA8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AEA27BA92A93F76A00FEDCC0 /* ViewModifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -145,6 +148,14 @@
 				AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AEA27BA92A93F76A00FEDCC0 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 			files = (
 				AE89DE982A93C8FD0078BAA8 /* LoginView.swift in Sources */,
 				AE89DE9A2A93EFCA0078BAA8 /* RegistirationView.swift in Sources */,
+				AEA27BAB2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift in Sources */,
 				AE850E452A93C76C00A39D01 /* ContentView.swift in Sources */,
 				AE850E432A93C76C00A39D01 /* ThreadsCloneApp.swift in Sources */,
 			);
