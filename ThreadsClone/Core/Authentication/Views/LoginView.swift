@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
+    
     var body: some View {
         NavigationStack{
             
@@ -27,18 +28,10 @@ struct LoginView: View {
                 // MARK: Email and Password
                 VStack{
                     TextField("Enter your Email", text: $email)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .padding(.horizontal ,24)
-                        .font(.subheadline)
-                        .cornerRadius(10)
+                        .modifier(ThreadsTextFieldModifier())
                     
                     SecureField("Enter your Password" , text: $password)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .padding(.horizontal ,24)
-                        .font(.subheadline)
-                        .cornerRadius(10)
+                        .modifier(ThreadsTextFieldModifier())
                 }
                 
                 
@@ -71,7 +64,8 @@ struct LoginView: View {
                 
                 // MARK: Sign Up
                 NavigationLink {
-                    Text("Register View")
+                    RegistirationView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack(spacing: 3){
                         Text("Don't have an account ?")

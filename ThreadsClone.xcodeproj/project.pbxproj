@@ -14,6 +14,8 @@
 		AE89DE982A93C8FD0078BAA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89DE972A93C8FD0078BAA8 /* LoginView.swift */; };
 		AE89DE9A2A93EFCA0078BAA8 /* RegistirationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */; };
 		AEA27BAB2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */; };
+		AEA27BAE2A954DF800FEDCC0 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA27BAD2A954DF800FEDCC0 /* ThreadsTabView.swift */; };
+		AEA27BB22A9551D400FEDCC0 /* ThreadsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA27BB12A9551D400FEDCC0 /* ThreadsFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AE89DE972A93C8FD0078BAA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistirationView.swift; sourceTree = "<group>"; };
 		AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
+		AEA27BAD2A954DF800FEDCC0 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
+		AEA27BB12A9551D400FEDCC0 /* ThreadsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		AE89DE922A93C83C0078BAA8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AEA27BAF2A9551A500FEDCC0 /* Feed */,
 				AE89DE952A93C8E80078BAA8 /* Root */,
 				AE89DE942A93C8B50078BAA8 /* Authentication */,
 			);
@@ -136,6 +141,7 @@
 		AE89DE952A93C8E80078BAA8 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				AEA27BAC2A954DD400FEDCC0 /* TabBar */,
 				AE850E442A93C76C00A39D01 /* ContentView.swift */,
 			);
 			path = Root;
@@ -156,6 +162,30 @@
 				AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		AEA27BAC2A954DD400FEDCC0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AEA27BAD2A954DF800FEDCC0 /* ThreadsTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		AEA27BAF2A9551A500FEDCC0 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AEA27BB02A9551A900FEDCC0 /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		AEA27BB02A9551A900FEDCC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEA27BB12A9551D400FEDCC0 /* ThreadsFeedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +260,11 @@
 			files = (
 				AE89DE982A93C8FD0078BAA8 /* LoginView.swift in Sources */,
 				AE89DE9A2A93EFCA0078BAA8 /* RegistirationView.swift in Sources */,
+				AEA27BAE2A954DF800FEDCC0 /* ThreadsTabView.swift in Sources */,
 				AEA27BAB2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift in Sources */,
 				AE850E452A93C76C00A39D01 /* ContentView.swift in Sources */,
 				AE850E432A93C76C00A39D01 /* ThreadsCloneApp.swift in Sources */,
+				AEA27BB22A9551D400FEDCC0 /* ThreadsFeedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
