@@ -51,6 +51,11 @@ struct ThreadsTabView: View {
                 .onAppear{selectedTab = 4}
                 .tag(4)
         }
+        .sheet(isPresented: .constant(selectedTab == 2) , onDismiss: {
+            selectedTab = 0
+        }, content: {
+            UploadThreadsView()
+        })
         .tint(.black)
     }
 }
