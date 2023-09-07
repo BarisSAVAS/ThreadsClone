@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>621065688752-bo7jejsmi8d7cfhv9ic8pofg4k4emf08.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.621065688752-bo7jejsmi8d7cfhv9ic8pofg4k4emf08</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDda_R6Ktfd3S28dOqHWI5fVcffLR4Rxto</string>
+	<key>GCM_SENDER_ID</key>
+	<string>621065688752</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>barisavas.ThreadsClone</string>
+	<key>PROJECT_ID</key>
+	<string>threadsclone-8a86e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>threadsclone-8a86e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:621065688752:ios:8700360e1a86a1b83b4d75</string>
+</dict>
+</plist>

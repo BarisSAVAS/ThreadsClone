@@ -20,7 +20,8 @@ struct UploadThreadsView: View {
                         Text("maxverstappen1")
                             .fontWeight(.semibold)
                         
-                        TextField("Start a Threads", text: $caption)
+                        TextField("Start a Threads", text: $caption , axis: .vertical)
+                            
                         }
                     
                     Spacer()
