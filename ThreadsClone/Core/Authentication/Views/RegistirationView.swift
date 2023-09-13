@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RegistirationView: View {
-    
+    @StateObject var viewModel = RegistrationViewModel()
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var fullname: String = ""
@@ -40,6 +40,8 @@ struct RegistirationView: View {
             }
             Button {
                 print("Sign up buttons activated")
+                Task{try await viewModel.createUser()}
+                
             } label: {
                 Text("Sign up")
                     .frame(width: 352 , height: 44)
@@ -59,7 +61,7 @@ struct RegistirationView: View {
                 HStack(spacing: 3){
                     Text("Don't have an account ?")
                     
-                    Text("Sign Up")
+                    Text("Sign In")
                         .fontWeight(.bold)
                 }
                     .font(.footnote)

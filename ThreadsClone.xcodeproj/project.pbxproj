@@ -13,6 +13,8 @@
 		AE850E4B2A93C76C00A39D01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE850E4A2A93C76C00A39D01 /* Preview Assets.xcassets */; };
 		AE89DE982A93C8FD0078BAA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89DE972A93C8FD0078BAA8 /* LoginView.swift */; };
 		AE89DE9A2A93EFCA0078BAA8 /* RegistirationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */; };
+		AE939CF02AAD050C00C9A9BE /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE939CEF2AAD050C00C9A9BE /* RegistrationViewModel.swift */; };
+		AE939CF22AAD08A200C9A9BE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE939CF12AAD08A200C9A9BE /* AuthService.swift */; };
 		AEA27BAB2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */; };
 		AEA27BAE2A954DF800FEDCC0 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA27BAD2A954DF800FEDCC0 /* ThreadsTabView.swift */; };
 		AEA27BB22A9551D400FEDCC0 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA27BB12A9551D400FEDCC0 /* FeedView.swift */; };
@@ -42,6 +44,8 @@
 		AE850E4A2A93C76C00A39D01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE89DE972A93C8FD0078BAA8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistirationView.swift; sourceTree = "<group>"; };
+		AE939CEF2AAD050C00C9A9BE /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		AE939CF12AAD08A200C9A9BE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AEA27BAA2A93F79D00FEDCC0 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		AEA27BAD2A954DF800FEDCC0 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		AEA27BB12A9551D400FEDCC0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 		AE89DE942A93C8B50078BAA8 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				AE939CEE2AAD04E900C9A9BE /* Service */,
+				AE939CED2AAD04E000C9A9BE /* ViewModel */,
 				AE89DE962A93C8F00078BAA8 /* Views */,
 			);
 			path = Authentication;
@@ -190,6 +196,22 @@
 				AE89DE992A93EFCA0078BAA8 /* RegistirationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AE939CED2AAD04E000C9A9BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE939CEF2AAD050C00C9A9BE /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE939CEE2AAD04E900C9A9BE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AE939CF12AAD08A200C9A9BE /* AuthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AEA27BA92A93F76A00FEDCC0 /* ViewModifiers */ = {
@@ -406,7 +428,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA27BC22A97CD5700FEDCC0 /* ExploreView.swift in Sources */,
+				AE939CF02AAD050C00C9A9BE /* RegistrationViewModel.swift in Sources */,
 				AEA27BBC2A97CD3100FEDCC0 /* ProfileView.swift in Sources */,
+				AE939CF22AAD08A200C9A9BE /* AuthService.swift in Sources */,
 				AED62FEA2A9F5ED600DA27A8 /* EditProfileView.swift in Sources */,
 				AEA27BC02A97CD4E00FEDCC0 /* UploadThreadsView.swift in Sources */,
 				AEA27BC62A9A37A300FEDCC0 /* ExploreCell.swift in Sources */,
